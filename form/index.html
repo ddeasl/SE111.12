@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Deasley">
+    <meta name="description" content="tables and forms">
+    <title>Tables And Forms</title>
+
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Labels</th>
+                <th>Form Fields</th>
+            </tr>
+        </thead>
+        <tbody>
+            <form action="confirm.html" method="GET">
+                <tr>
+                    <td><label for="pgname">Parent/Guardian Name</label></td>
+                    <td>
+                        <input type="text" name="first name" id="first" placeholder="First Name" required><br>
+                        <input type="text" name="last name" id="last" placeholder="Last Name" required>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="childname"></label>Child's First Name</td>
+                    <td>
+                        <input type="text" name="child's first name" id="childname" placeholder="Child's Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="childsage"></label>Child's Age</td>
+                    <td>
+                        <input type="text" name="child's age" id="childsage" placeholder="Child's Age" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Date and Time</th>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="date"></label>Date</td>
+                    <td>
+                        <input type="text" name="date" id="date" placeholder="MM/DD/YYYY" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="start time">Start Time</label></td>
+                    <td>
+                        <input type="text" name="start time" id="start_time" placeholder="--:--" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="number of guests">Number of Guests</label></td>
+                    <td>
+                        <input type="text" name="number of guests" id="numguest" placeholder="Number of Guests"
+                            required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Food</th>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Size"></label>Size</td>
+                    <td>
+                        <input type="radio" name="size" id="size" value="Small" required>SM
+                        <input type="radio" name="size" id="size" value="Medium" required>MD
+                        <input type="radio" name="size" id="size" value="Large" required>LG
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="drinks">Drinks</label></td>
+                    <td>
+                        <input type="checkbox" name="drink1" id="coke" value="coke">Coke
+                        <input type="checkbox" name="drink2" id="sprite" value="sprite">Sprite
+                        <input type="checkbox" name="drink3" id="fruit punch" value="fruit punch">Fruit Punch
+                        <input type="checkbox" name="drink4" id="lemonade" value="lemonade">Lemonade
+                        <input type="checkbox" name="drink5" id="iced tea" value="iced tea">Iced Tea
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cake">Cake</label></td>
+                    <td>
+                        <select name="cake" id="cake">
+                            <option value="chocolate">Chocolate</option>
+                            <option value="vanilla">Vanilla</option>
+                            <option value="bring own">I'll Bring My Own</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Decoration</th>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="color scheme">Color Scheme</label></td>
+                    <td>
+                        <input type="color" name="color" id="color">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="add comments">Additional Comments</label></td>
+                    <td>
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="submit"></label></th>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+
+
+
+
+            </form>
+        </tbody>
+    </table>
+</body>
+
+</html>
