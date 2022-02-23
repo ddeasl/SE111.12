@@ -11,8 +11,13 @@ function dataPrompt() {
     var uncleSams = Number(grossPay) * Number(taxRate)
     var netPay = Number(grossPay) - Number(uncleSams)
     
-    document.querySelector('span').innerHTML = `GROSS PAY: $${grossPay} Taxes: $${uncleSams} Net Pay: $${netPay}`
+    document.querySelector('span').innerHTML = `
+    GROSS PAY: $${grossPay.toFixed(2)}<br> 
+    Taxes: $${uncleSams.toFixed(2)}<br>
+    Net Pay: $${netPay.toFixed(2)}`
     
-    console.log(`GROSS PAY: $${grossPay} Taxes: $${uncleSams} Net Pay: $${netPay}`)
-
+    console.log(`
+    GROSS PAY: $${grossPay} 
+    Taxes: $${uncleSams}
+    Net Pay: $${netPay}`)
 }
